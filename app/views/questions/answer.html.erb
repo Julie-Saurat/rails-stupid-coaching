@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Stupid Coach is responding you</h1>
+  <%# afficher la question  %>
+  <div class="card">
+    <p><%= @user_question %></p>
+    <p class="personae">-You</p>
+  </div>
+
+  <%# donner une réponse %>
+  <div class="card answer-card">
+    <p id="answer"><%= @answer %></p>
+    <p class="personae">-Your coach</p>
+  </div>
+
+  <%= link_to "Want to ask again?", ask_path %>
+</div>
